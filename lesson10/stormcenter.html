@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A page where users can report a storm or unusual weather events in the southeastern region of Idaho.">
+    <meta name="author" content="Daniel Guzman">
+
+    <title>Storm Center | Preston, Idaho</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="js/date.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    
+</head>
+<body onload="yearAndUpdate()" >
+    <header>
+        <picture><img src="images/logo.svg" alt="logo of Weathers Watch"></picture>
+        <div class="headings">
+                <h1>Weathers Watch</h1>
+                <p>The Best Way to Know What is Coming</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="current"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+            <h2 class="town-name">STORM CENTER</h2>
+    
+            <div class="form">
+                
+                <form action="thanks.html" method="GET">
+
+                    <fieldset>
+
+                    <label for="name">Full Name: </label><br>
+                    <input type="text" name="name" id="name" pattern="[A-Za-z]{5,}"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="yourmail@example.com"><br><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" name="phone" id="phone" required><br><br>
+                    <label for="zip">Zip Code:</label><br>
+                    <input type="number" name="zip" id="zip" required><br><br>
+                    <label for="date">Storm Date:</label><br>
+                    <input type="date" name="date" id="date"><br><br>
+                    <label for="event">Storm Type:</label><br>
+                    <input list="event" id="event-d">
+                        <datalist id="event">
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </datalist><br><br>
+                        <label class="flexly" for="severity">Rating: &nbsp;&nbsp;&nbsp;
+                                <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                                        <span id="ratingvalue">5</span>
+                        </label>
+                        <datalist id="tickmarks">
+                                <option value="0">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                              </datalist>
+                    <label for="region">Storm Region</label><br>
+                    <select name="region" id="region">
+                        <option selected value="Select Region..." disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Sprngs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select><br><br>
+                    <label for="danger">User In-Danger Level:</label><br><br>
+                    <input type="radio" name="danger-y" id="danger" value="yes" class="radio">Yes <br>
+                    <input type="radio" name="danger-m" id="danger-m" value="no" class="radio">Maybe <br>
+                    <input type="radio" name="danger-n" id="danger-n" value="maybe" class="radio">No <br><br>
+                    <label for="comment">Adicional Information and Comments:</label><br>
+                    <textarea name="comment" id="comment" placeholder="Your comments..." rows="6" cols="50"></textarea><br>
+                    <input type="submit" value="Submit" id="submit">
+                    </fieldset>
+                </form>
+
+                
+            </div>
+            <div class="clearfix"><br></div>
+            <div class="container contact">
+                <div class="contact-map">
+                    <img src="images/map-image.jpg" alt="Southeastern Idaho map">
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Weathers Watch</h3>
+                    <p>
+                        <img src="images/place.png" width="20" alt="place icon"> 13 West Oneida <br>
+                        Preston, ID 83263<br> <br>
+                        <img src="images/phone.png" width="20" alt="call icon"> (208)852-1817<br>
+                        <img src="images/mail.png" width="20" alt="mail icon"> info@weathers.watch <br>
+                        <a href="#"><img src="images/facebook.png" width="25" alt="facebook icon"></a> 
+                            <a href="#"><img src="images/twitter.png" width="25" alt="twitter icon"></a> 
+                            <a href="#"><img src="images/instagram.png" width="25" alt="instagram icon"></a> 
+                            <a href="#"><img src="images/google-plus.png" width="25" alt="google plus icon"></a>
+                   
+                </div>
+            
+    
+            </div>
+           
+        </main>
+    
+    <footer>
+            <p>&copy; <span id="year"></span> | Weathers.Watch | Daniel Guzmán <br>
+                <span id="updated"></span>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({google: {families: ['Atma', 'Raleway']}});
+    </script>
+    <script src="js/severity.js"></script>
+
+</body>
+</html>

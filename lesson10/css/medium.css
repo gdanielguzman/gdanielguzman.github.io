@@ -1,0 +1,156 @@
+@media only screen and (min-width: 32.5em) {
+    
+     
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header img {
+        width: 120px;
+    }
+
+    main, footer {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    
+    h1, h2, h3, h4 {
+        font-family:'Atma', cursive;
+    }
+    
+    .headings h1 {
+        font-size: 2.5rem;
+    }
+    
+    .headings p {
+        font-size: 1rem;
+        margin-top: -30px;
+    } 
+
+    .navigation {
+        display: flex;
+        align-items: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+        border-left: 1px solid rgba(0,0,0,0.2);
+        height: inherit;
+    }
+
+    .navigation li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    
+    .responsive li {
+        border-top: 0;
+    }
+
+    .forecast {
+        display: block;
+        text-align: center;
+        background-color: white;
+    }
+
+
+    .forecast h3{
+        font-size: 1.5rem;
+        margin-top: 0;
+        text-align: center;
+        color: #F08700;
+    }
+
+    .forecastTable table{
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 1px solid #F08700;
+    }
+
+    .forecastTable th {
+        background-color: #F08700;
+        color: white;
+    }
+
+    .forecastTable td {
+        padding: 10px;
+    }
+    
+    .article img{
+        float: right; 
+        width: 250px;
+        height: auto; 
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        min-height: 250px;
+    }
+
+    .contact-map {
+        display: block;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    
+    .contact-info {
+        margin: 0 auto;
+        width: 50%;
+        text-align: left;
+        position: absolute;
+        left: 55%;
+        top: 20px;
+
+    }
+
+    .contact img {
+        max-width: 40%;
+    }
+
+    .gallery {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    .img-container {
+        max-width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+    
+    figure {
+        padding: 0;
+    }
+
+    .container-home {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .container-home section:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .container-home section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container-home img {
+        max-width: 80%;
+}
+}

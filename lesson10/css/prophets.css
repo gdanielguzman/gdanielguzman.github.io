@@ -1,0 +1,58 @@
+body {
+    background-color: #eeeeee;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: rgb(122, 57, 93);
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    padding: 0 7px;
+}
+
+.cards {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 8px 2px #cccccc;
+    padding: 10px;
+}
+
+section {
+border: 1px solid rgb(122, 57, 93);
+margin: 5px;
+background-color: white;
+}
+
+img {
+    max-width: 60%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 8px 2px gray;
+}
+
+footer {
+    margin: 25px;
+}
+
+@media only screen and (min-width: 32.5em) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
