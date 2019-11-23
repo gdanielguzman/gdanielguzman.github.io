@@ -16,7 +16,6 @@
 
     <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/windchill.js"></script>
 </head>
 <body onload="yearAndUpdate(), windchill()" >
     <div class="banner">
@@ -35,7 +34,7 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="preston.html">Preston</a></li>
+            <li class="current"><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -61,15 +60,15 @@
                 <hr>
                 <div>
                     <span class="left">Currently:</span>
-                    <span class="right">Sunny</span> <br>
+                    <span class="right" id="currently"></span> <br>
                     <span class="left">High:</span>
-                    <span class="right"><span id="temperature">63</span>ºF</span> <br>
+                    <span class="right"><span id="high"></span>ºF</span> <br>
                     <span class="left">Wind Chill:</span>
                     <span class="right" id="windchill"></span> <br>
                     <span class="left">Humidity:</span>
-                    <span class="right">41%</span> <br>
+                    <span class="right"><span id="humidity"></span>%</span> <br>
                     <span class="left">Wind Speed:</span>
-                    <span class="right"><span id="windSpeed">6</span>mph</span> <br>
+                    <span class="right"><span id="speed"></span> mph</span> <br>
                 </div>
             </div>
         </div>
@@ -77,18 +76,18 @@
             <h3>5 Day Forecast</h3>
             <div class="forecastTable"><table>
                 <tr>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
+                    <th id="day0"></th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
                 </tr>
                 <tr>
-                    <td><img src="images/sunny-icon.jpg" width="50" alt="sun icon"> <br> 89ºF</td>
-                    <td><img src="images/sunny-icon.jpg" width="50" alt="sun icon"> <br> 86ºF</td>
-                    <td><img src="images/sunny-icon.jpg" width="50" alt="sun icon"> <br> 81ºF</td>
-                    <td><img src="images/sunny-icon.jpg" width="50" alt="sun icon"> <br> 79ºF</td>
-                    <td><img src="images/sunny-icon.jpg" width="50" alt="sun icon"> <br> 75ºF</td>
+                    <td><span><img src="" alt="" id="icon0"></span> <br> <span id="temp0"></span>ºF</td>
+                    <td><span><img src="" alt="" id="icon1"></span> <br> <span id="temp1"></span>ºF</td>
+                    <td><span><img src="" alt="" id="icon2"></span> <br> <span id="temp2"></span>ºF</td>
+                    <td><span><img src="" alt="" id="icon3"></span> <br> <span id="temp3"></span>ºF</td>
+                    <td><span><img src="" alt="" id="icon4"></span> <br> <span id="temp4"></span>ºF</td>
                 </tr>
             </table>
             </div>
@@ -130,7 +129,8 @@
     
     <footer>
             <p>&copy; <span id="year"></span> | Weathers.Watch | Daniel Guzmán <br>
-                <span id="updated"></span>
+                <span id="updated"></span> <br>
+                Weather and forecast data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -138,6 +138,8 @@
     <script>
         WebFont.load({google: {families: ['Atma', 'Raleway']}});
     </script>
+    <script src="js/weatherapi-preston.js"></script>    
+    <script src="js/windchill.js"></script>
 
 </body>
 </html>
