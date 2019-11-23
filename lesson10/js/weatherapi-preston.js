@@ -10,8 +10,21 @@ fetch(current)
     document.getElementById('humidity').textContent = jsObject.main.humidity.toFixed(0);
     document.getElementById('speed').textContent = jsObject.wind.speed.toFixed(0);
 
+    var t = jsObject.main.temp_max;
+    var s = jsObject.wind.speed;
+    //console.log(t, s);
+    
+    var f = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+    //console.log(f);
+
+    if(t < 50 && s > 3) {
+        document.getElementById("windchill").innerHTML = f.toFixed(1) + "ºF";
+    } else {
+        document.getElementById("windchill").innerHTML = "N/A";
+    }
   
   });
+
 
 
 const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=bffb752501b51087309150590ce26861";
