@@ -10,7 +10,7 @@ fetch(current)
     document.getElementById('humidity').textContent = jsObject.main.humidity.toFixed(0);
     document.getElementById('speed').textContent = jsObject.wind.speed.toFixed(0);
 
-    var t = jsObject.main.temp_max;
+    var t = jsObject.main.temp;
     var s = jsObject.wind.speed;
     //console.log(t, s);
     
