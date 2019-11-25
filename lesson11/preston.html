@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Weather report and other information of Preston, Idaho.">
+    <meta name="author" content="Daniel Guzman">
+    
+    <title>Preston, Idaho | Weather</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+</head>
+
+<body onload="yearAndUpdate()" >
+    <div class="banner">
+        <p><b>Saturday = Preston Pancakes in the Park!</b> &nbsp; 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    
+    <header>
+        <picture><img src="images/logo.svg" alt="logo of Weathers Watch"></picture>
+        <div class="headings">
+                <h1>Weathers Watch</h1>
+                <p>The Best Way to Know What is Coming</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="town-name">PRESTON</h2>
+    
+        <div class="container hero">
+          
+            <picture>
+                <source srcset="images/hero-image-sm.jpg" media="(max-width: 32.5em)">
+                <source srcset="images/hero-image-md.jpg" media="(max-width: 60em)">
+                <source srcset="images/hero-image-lg.jpg" media="(min-width: 60em)">  
+                    <img src="hero-image-default.jpg" alt="hero image"> 
+            </picture>
+               
+
+            <div class="details">
+                <h3>Weather Summary</h3>
+                <hr>
+                <div>
+                    <span class="left">Currently:</span>
+                    <span class="right" id="currently"></span> <br>
+                    <span class="left">High:</span>
+                    <span class="right"><span id="high"></span>ºF</span> <br>
+                    <span class="left">Wind Chill:</span>
+                    <span class="right" id="windchill"></span> <br>
+                    <span class="left">Humidity:</span>
+                    <span class="right"><span id="humidity"></span>%</span> <br>
+                    <span class="left">Wind Speed:</span>
+                    <span class="right"><span id="speed"></span> mph</span> <br>
+                </div>
+            </div>
+        </div>
+        <div class="container forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="forecastTable"><table>
+                <tr>
+                    <th id="day0"></th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon0"></span> <br> <span id="temp0"></span>ºF</td>
+                    <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon1"></span> <br> <span id="temp1"></span>ºF</td>
+                    <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon2"></span> <br> <span id="temp2"></span>ºF</td>
+                    <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon3"></span> <br> <span id="temp3"></span>ºF</td>
+                    <td><span><img src="images/icon.jpg" alt="Weather icon" id="icon4"></span> <br> <span id="temp4"></span>ºF</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="container article">
+            <img src="images/couple-walking.jpg" alt="couple walking">
+            <h3>Ten reasons why summer is good for you</h3>
+            <p class="author">by ANGELA EPSTEIN and FELICITY WARNER, Daily Mail</p>
+            <p>After a seemingly endless winter, it looks like summer is finally on its way.</p>
+            <p>But sunny skies and rising temperatures do more than make our environment a pleasant place. They also provide some very significant benefits to our health and wellbeing.</p>
+            <p>Sunlight helps to regulate almost all our bodily processes, as well as acting as psychological encouragement to improve our lifestyle.</p>
+            <p>Here, we bring you the top ten reasons why the summer is just what the doctor ordered.</p>
+            <p><a href="https://www.dailymail.co.uk/health/article-110102/Ten-reasons-summer-good-you.html" target="_blank">Read more</a></p>
+        </div>
+        <div class="container contact">
+            <div class="contact-map">
+                <img src="images/map-image.jpg" alt="Southeastern Idaho map">
+            </div>
+            
+            <div class="contact-info">
+                <h3>Weathers Watch</h3>
+                <p>
+                    <img src="images/place.png" width="20" alt="place icon"> 13 West Oneida <br>
+                    Preston, ID 83263<br> <br>
+                    <img src="images/phone.png" width="20" alt="call icon"> (208)852-1817<br>
+                    <img src="images/mail.png" width="20" alt="mail icon"> info@weathers.watch <br>
+                    <a href="#"><img src="images/facebook.png" width="25" alt="facebook icon"></a> 
+                        <a href="#"><img src="images/twitter.png" width="25" alt="twitter icon"></a> 
+                        <a href="#"><img src="images/instagram.png" width="25" alt="instagram icon"></a> 
+                        <a href="#"><img src="images/google-plus.png" width="25" alt="google plus icon"></a>
+               
+            </div>
+        
+
+        </div>
+        <br>
+       
+    </main>
+    
+    <footer>
+            <p>&copy; <span id="year"></span> | Weathers.Watch | Daniel Guzmán <br>
+                <span id="updated"></span> <br>
+                Weather and forecast data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({google: {families: ['Atma', 'Raleway']}});
+    </script>
+    <script src="js/weatherapi-preston.js"></script>    
+
+</body>
+</html>
