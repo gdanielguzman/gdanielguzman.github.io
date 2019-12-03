@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Weather report and other information of Preston, Idaho.">
+    <meta name="description" content="Weather report and other information of Soda Springs, Idaho.">
     <meta name="author" content="Daniel Guzman">
     
-    <title>Preston, Idaho | Weather</title>
+    <title>Soda Springs, Idaho | Weather</title>
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -19,9 +19,9 @@
 </head>
 
 <body onload="yearAndUpdate()" >
-    <div class="banner">
+    <!--<div class="banner">
         <p><b>Saturday = Preston Pancakes in the Park!</b> &nbsp; 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
+    </div>-->
     
     <header>
         <picture><img src="images/logo.svg" alt="logo of Weathers Watch"></picture>
@@ -35,8 +35,8 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="current"><a href="soda-springs.html">Soda Springs</a></li>
             <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -44,15 +44,15 @@
     </nav>
 
     <main>
-        <h2 class="town-name">PRESTON</h2>
+        <h2 class="town-name">SODA SPRINGS</h2>
     
         <div class="container hero">
           
             <picture>
-                <source srcset="images/hero-image-sm.jpg" media="(max-width: 32.5em)">
-                <source srcset="images/hero-image-md.jpg" media="(max-width: 60em)">
-                <source srcset="images/hero-image-lg.jpg" media="(min-width: 60em)">  
-                    <img src="hero-image-default.jpg" alt="hero image"> 
+                <source srcset="images/soda-springs-hero-image-sm.jpg" media="(max-width: 32.5em)">
+                <source srcset="images/soda-springs-hero-image-md.jpg" media="(max-width: 60em)">
+                <source srcset="images/soda-springs-hero-image-lg.jpg" media="(min-width: 60em)">  
+                    <img src="soda-springs-hero-image-default.jpg" alt="hero image"> 
             </picture>
                
 
@@ -96,19 +96,19 @@
 
         <div class="container-events">
             <h3>Upcoming Events</h3>
-            <img src="images/preston-festival.jpg" alt="Preston festival">
+            <img src="images/geyser-song-day.jpg" alt="Geyser Song Day">
           
     
         </div> 
         <div class="container article">
-            <img src="images/couple-walking.jpg" alt="couple walking">
-            <h3>Ten reasons why summer is good for you</h3>
-            <p class="author">by ANGELA EPSTEIN and FELICITY WARNER, Daily Mail</p>
-            <p>After a seemingly endless winter, it looks like summer is finally on its way.</p>
-            <p>But sunny skies and rising temperatures do more than make our environment a pleasant place. They also provide some very significant benefits to our health and wellbeing.</p>
-            <p>Sunlight helps to regulate almost all our bodily processes, as well as acting as psychological encouragement to improve our lifestyle.</p>
-            <p>Here, we bring you the top ten reasons why the summer is just what the doctor ordered.</p>
-            <p><a href="https://www.dailymail.co.uk/health/article-110102/Ten-reasons-summer-good-you.html" target="_blank">Read more</a></p>
+            <img src="images/hating-winter.jpg" alt="tree with a lot of snow">
+            <h3>How to survive winter even if you really, really hate it</h3>
+            <p class="author">by NATALY KOGAN</p>
+            <p>Let me start with a confession: <em>My name is Nataly, and I really, really hate winter</em> . (Now you say, “Hi, Nataly!”)</p>
+            <p>I hate the way the frigid cold makes your bones hurt. I hate the freezing wind that leaves your face feeling like it was kissed by sandpaper. I hate the snow that makes walking and driving a battle. I hate the hours it takes to get dressed in all the endless layers just to step outside! Did I mention the snow?</p>
+            <p>I start dreading winter in October, as if preparing for hating winter earlier will help me deal with it better when it eventually arrives. (Which is a complete waste of time and a complete waste of the short-lived, beautiful October New England weather that I do love.)</p>
+            <p>But what I hate even more than winter is spending several months every year stuck in an emotional state of total dread. I can’t change the weather here in Boston, and while I like to joke about picking up and moving somewhere warm, my small but close-knit family is here, and so is my work. I won’t pretend that winter and I will ever become BFFs, but I’ve decided to come up with a few ways to make some peace with it. I hope some of these tips can also help you deal with winter better, and possibly we’ll all even find a little joy in it (I can dream).</p>
+            <p><a href="https://www.happier.com/blog/how-to-survive-winter-even-if-you-really-really-hate-it/" target="_blank">Read more</a></p>
         </div>
         <div class="container contact">
             <div class="contact-map">
@@ -146,8 +146,8 @@
     <script>
         WebFont.load({google: {families: ['Atma', 'Raleway']}});
     </script>
-    <script src="js/weatherapi-preston.js"></script>
-    <script src="js/events-preston.js"></script>   
+    <script src="js/weatherapi-sodasprings.js"></script>
+    <script src="js/events-sodasprings.js"></script>   
 
 </body>
 </html>

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Weather report and other information of Preston, Idaho.">
+    <meta name="description" content="Weather report and other information of Soda Springs, Idaho.">
     <meta name="author" content="Daniel Guzman">
     
-    <title>Preston, Idaho | Weather</title>
+    <title>Fish Haven, Idaho | Weather</title>
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -19,9 +19,9 @@
 </head>
 
 <body onload="yearAndUpdate()" >
-    <div class="banner">
+    <!--<div class="banner">
         <p><b>Saturday = Preston Pancakes in the Park!</b> &nbsp; 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
+    </div>-->
     
     <header>
         <picture><img src="images/logo.svg" alt="logo of Weathers Watch"></picture>
@@ -35,24 +35,24 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li class="current"><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2 class="town-name">PRESTON</h2>
+        <h2 class="town-name">FISH HAVEN</h2>
     
         <div class="container hero">
           
             <picture>
-                <source srcset="images/hero-image-sm.jpg" media="(max-width: 32.5em)">
-                <source srcset="images/hero-image-md.jpg" media="(max-width: 60em)">
-                <source srcset="images/hero-image-lg.jpg" media="(min-width: 60em)">  
-                    <img src="hero-image-default.jpg" alt="hero image"> 
+                <source srcset="images/fish-haven-hero-image-sm.jpg" media="(max-width: 32.5em)">
+                <source srcset="images/fish-haven-hero-image-md.jpg" media="(max-width: 60em)">
+                <source srcset="images/fish-haven-hero-image-lg.jpg" media="(min-width: 60em)">  
+                    <img src="soda-fish-haven-image-default.jpg" alt="hero image"> 
             </picture>
                
 
@@ -96,19 +96,18 @@
 
         <div class="container-events">
             <h3>Upcoming Events</h3>
-            <img src="images/preston-festival.jpg" alt="Preston festival">
+            <img src="images/how-big-fish.jpg" alt="Woman fishing">
           
     
         </div> 
         <div class="container article">
-            <img src="images/couple-walking.jpg" alt="couple walking">
-            <h3>Ten reasons why summer is good for you</h3>
-            <p class="author">by ANGELA EPSTEIN and FELICITY WARNER, Daily Mail</p>
-            <p>After a seemingly endless winter, it looks like summer is finally on its way.</p>
-            <p>But sunny skies and rising temperatures do more than make our environment a pleasant place. They also provide some very significant benefits to our health and wellbeing.</p>
-            <p>Sunlight helps to regulate almost all our bodily processes, as well as acting as psychological encouragement to improve our lifestyle.</p>
-            <p>Here, we bring you the top ten reasons why the summer is just what the doctor ordered.</p>
-            <p><a href="https://www.dailymail.co.uk/health/article-110102/Ten-reasons-summer-good-you.html" target="_blank">Read more</a></p>
+            <img src="images/winter-sports.jpg" alt="two kids skating">
+            <h3>Winter Sports: Sledding, Skiing, Snowboarding, Skating</h3>
+            <p class="author">by STEVEN DOWSHEN, MD</p>
+            <p>Winter sports are lots of fun — just ask any kid who's just scored the winning goal during an ice-hockey game or finished sledding to the bottom of a giant hill.</p>
+            <p>But when you're sitting on that sled, getting ready to ski, or doing a figure-eight on the pond in your skates, you have to know how to be safe. Otherwise, you could get injured and be stuck inside while everyone else is enjoying the snow.</p>
+        
+            <p><a href="https://kidshealth.org/en/kids/winter-sports.html" target="_blank">Read more</a></p>
         </div>
         <div class="container contact">
             <div class="contact-map">
@@ -146,8 +145,8 @@
     <script>
         WebFont.load({google: {families: ['Atma', 'Raleway']}});
     </script>
-    <script src="js/weatherapi-preston.js"></script>
-    <script src="js/events-preston.js"></script>   
+    <script src="js/weatherapi-fishhaven.js"></script>
+    <script src="js/events-fishhaven.js"></script>   
 
 </body>
 </html>
