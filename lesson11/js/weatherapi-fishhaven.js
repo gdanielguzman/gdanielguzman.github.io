@@ -1,4 +1,4 @@
-const current = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=bffb752501b51087309150590ce26861";
+const current = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=bffb752501b51087309150590ce26861";
 
 fetch(current)
   .then((response) => response.json())
@@ -27,7 +27,7 @@ fetch(current)
 
 
 
-const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=bffb752501b51087309150590ce26861";
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=bffb752501b51087309150590ce26861";
 
 fetch(forecast)
   .then((response) => response.json())
