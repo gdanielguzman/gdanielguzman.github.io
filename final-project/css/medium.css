@@ -1,0 +1,177 @@
+@media only screen and (min-width: 32.5em) {
+    
+     
+    p {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    
+    nav {
+        background-color: #9d9f80;
+        margin: 0 auto;
+        font-size: 1rem;
+        height: inherit;
+        margin-bottom: 25px;
+        padding: 0.9px;
+    }
+
+        
+    .navigation {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    
+
+	.navigation li:first-child {
+        display: none;
+	}
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+        border-left: 1px solid rgba(0,0,0,0.2);
+        padding: 0;
+    }
+
+    .navigation li:hover {
+        color: #7e7f67;
+        background-color: rgba(0,0,0,0);
+        font-size: 80%;
+       
+    }
+
+    .img-left {
+        float: left;
+        max-width: 40%;
+        padding-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .img-right {
+        float: right;
+        max-width: 40%;
+        padding-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+   
+    .text-left {
+        width: 50%;
+        display: block;
+    }
+
+    .buttons {
+        background-color: #9d9f80;
+        color: white;
+        width: 250px;
+        height: 44px;
+        border-color: #ffffff;
+        margin: 0 auto;
+        border-radius: 7px;
+    }
+
+
+    .temple a {
+        padding-left: 40px;
+    }
+
+    
+
+    .navigation li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    
+    .responsive li {
+        border-top: 0;
+    }
+
+    form {
+        font-size: 1rem;
+    }
+    
+
+    .contact {
+        min-height: 250px;
+    }
+
+    .contact-map {
+        display: block;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    
+    .contact-info {
+        margin: 0 auto;
+        width: 50%;
+        text-align: left;
+        position: absolute;
+        left: 55%;
+        top: 20px;
+
+    }
+
+    .contact img {
+        max-width: 40%;
+    }
+
+    .gallery {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
+    .gallery-services {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
+
+    .img-container {
+        max-width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+    
+    figure {
+        padding: 0;
+    }
+
+    .info h2 {
+        margin-top: 0;
+    }
+
+    .temple-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;  
+        margin-bottom: 30px;
+        margin-top: 35px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        }
+    }
+
+    .temple img {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 17px;
+    }
+
+    .temple {
+        width: 90%;
+    }

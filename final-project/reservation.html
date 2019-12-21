@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Make your reservacion with us. Temple Inn & Suites is near to the temple you want to visit.">
+    <meta name="author" content="Daniel Guzman">
+    
+    <title>Reservations | Temple Inn & Suites</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&7cRoboto&display=swap" rel="stylesheet">
+
+    <script src="js/menu.js" defer></script>    
+    <script src="js/info.js" defer></script>
+</head>
+<body>
+    <header>
+            <img src="images/logo.png" alt="Temple Inn & Suits" class="logo">
+            <h1>Temple Inn & Suites</h1></div>
+        
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li class="current"><a href="reservation.html">Reservation</a></li class="current">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+            <h2 class="main-title">Make Your Reservation</h2>
+
+               <div class="form">
+                
+                <form action="thanks.html" method="GET">
+
+                    <fieldset>
+
+                    <label for="name">Full Name: </label><br>
+                    <input type="text" name="name" id="name" pattern="[a-zA-Z ]{5,}"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="yourmail@example.com"><br><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" name="phone" id="phone" required><br><br>
+                    <label for="country">Country/City of Origin:</label><br>
+                    <input type="text" name="country" id="country" required><br><br>
+                    <label for="temple">Location</label><br>
+                    <select name="temple" id="temple">
+                        <option selected value="temple-destination" disabled>Select Destination/Temple</option>
+                        <option value="cochabamba">Bolivia, Cochabamba</option>
+                        <option value="lima">Peru, Lima</option>
+                        <option value="buenosaires">Argentina, Buenos Aires</option>
+                        <option value="concepcion">Chile, Concepcion</option>
+                    </select><br><br>
+                    <label for="date">Arrival Date:</label><br>
+                    <input type="date" name="date" id="date"><br><br>
+                    <label for="days">Number of Days You Will Stay:</label><br>
+                    <input type="number" name="days" id="days" required><br><br>
+                    <label for="persons">Number of Persons:</label><br>
+                    <input type="number" name="persons" id="persons" required><br><br>
+                    <label for="numberofrooms">Number of Rooms:</label><br>
+                    <input type="number" name="rooms" id="rooms" required><br><br>
+                    <label for="temple">Room Type</label><br>
+                    <select name="room" id="room">
+                        <option selected value="room-selected" disabled>Select the Option You Need</option>
+                        <option value="simple">Simple / Shared</option>
+                        <option value="marriage">Marital</option>
+                        <option value="family">Familiar</option>
+                        <option value="longterm">Couple, Long Term (Residence)</option>
+                    </select><br><br>
+                    <label for="comment">Adicional Information and Comments: <br></label><br>
+                    <textarea name="comment" id="comment" placeholder="Your comments... (Please include any special accommodations or assistance you will need)." rows="6" cols="50"></textarea><br><br>
+                    <input type="submit" value="Submit" id="submit" class="buttons">
+                    </fieldset>
+                </form>
+
+                
+            </div>
+            <div class="clearfix"><br></div>
+           
+           
+        </main>
+    
+        <footer>
+            <p>&copy; 2019 | TempleInnSuites.com</p>
+        </footer>
+
+</body>
+</html>
