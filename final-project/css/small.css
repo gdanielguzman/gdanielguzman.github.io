@@ -253,7 +253,7 @@ section img {
     font-size: 1rem;
     font-family:'Cinzel', serif;
     color: #9d9f80;
-    font-variant: 900;
+    font-variant: bolder;
 }
 
 .info {
@@ -455,7 +455,7 @@ select{
 }
 
 .right {
-    width: 50%d;
+    width: 50%;
 }
 
 .centered {
