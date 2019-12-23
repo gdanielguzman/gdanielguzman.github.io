@@ -57,6 +57,30 @@
         <p><button type="button" id="reserve" class="buttons" onclick="window.location='http://gdanielguzman.github.io/final-project/reservation.html'">Make a reservation</button></p>
         <span><img src="images/detail.png" alt="decorative detail"></span>
     </section>
+        
+        <section>
+                <br><br>
+                <h2>Send Us a Message</h2>
+
+               <div class="form">
+                
+                <form action="message.html" method="GET">
+
+                    <fieldset>
+
+                    <label for="name">Full Name: </label><br>
+                    <input type="text" name="name" id="name" pattern="[a-zA-Z ]{5,}"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="yourmail@example.com"><br><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" name="phone" id="phone" required><br><br>
+                    <label for="comment">Adicional Information and Comments: <br></label><br>
+                    <textarea name="comment" id="comment" placeholder="Your comments... " rows="6" cols="50"></textarea><br><br>
+                    <input type="submit" value="Submit" id="submit" class="buttons">
+                    </fieldset>
+                </form>
+                </div>
+            </section>
 
     
     
