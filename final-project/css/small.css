@@ -542,5 +542,10 @@ footer a:hover {
     margin-top: 7px;
 }
 
+iframe {
+    width: 100%;
+    frameborder: 0;
+}
+
 
 
